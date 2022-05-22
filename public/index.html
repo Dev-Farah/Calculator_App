@@ -16,56 +16,67 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Animation CSS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="main">
+        <form onsubmit="return false" class="d-flex justify-content-center align-items-center">
+            <!-- AOS Animation -->
+            <section>
+                <div class="animation" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="1000">
+                    <section class="my-5 p-2 sec2">
+                        <div class="display d-flex justify-content-center w-100 m-0 p-3 border-bottom">
+                            <input type="text" placeholder="0" id="input" class="w-100 mx-auto p-2 text-right">
+                        </div>
+                        <div class="d-flex justify-content-center w-100 p-3">
+                            <table class="w-100 border-1">
+                                <tr>
+                                    <td><button class="opt" onclick="allClear()">AC</button></td>
+                                    <td><button class="opt" onclick="getValue('/')">÷</button></td>
+                                    <td><button class="opt" onclick="getValue('*')">x</button></td>
+                                    <td><button class="opt" onclick="backspace()"><i
+                                                class="fa-solid fa-delete-left"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="getValue('7')">7</button></td>
+                                    <td><button onclick="getValue('8')">8</button></td>
+                                    <td><button onclick="getValue('9')">9</button></td>
+                                    <td><button class="opt" onclick="getValue('-')">-</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="getValue('4')">4</button></td>
+                                    <td><button onclick="getValue('5')">5</button></td>
+                                    <td><button onclick="getValue('6')">6</button></td>
+                                    <td><button class="opt" onclick="getValue('+')">+</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button onclick="getValue('1')">1</button></td>
+                                    <td><button onclick="getValue('2')">2</button></td>
+                                    <td><button onclick="getValue('3')">3</button></td>
+                                    <td class="span" rowspan="2"><button class="opt" type="submit"
+                                            onclick="totalValue(), audio.play()">=</button></td>
 
-    <form onsubmit="return false" class="d-flex justify-content-center align-items-center">
-        <section class="my-5 p-2 sec2">
-            <div class="display d-flex justify-content-center w-100 m-0 p-3 border-bottom">
-                <input type="text" placeholder="0" id="input" class="w-100 mx-auto p-2 text-right">
-            </div>
-            <div class="d-flex justify-content-center w-100 p-3">
-                <table class="w-100 border-1">
-                    <tr>
-                        <td><button class="opt" onclick="allClear()">AC</button></td>
-                        <td><button class="opt" onclick="getValue('/')">÷</button></td>
-                        <td><button class="opt" onclick="getValue('*')">x</button></td>
-                        <td><button class="opt" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="getValue('7')">7</button></td>
-                        <td><button onclick="getValue('8')">8</button></td>
-                        <td><button onclick="getValue('9')">9</button></td>
-                        <td><button class="opt" onclick="getValue('-')">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="getValue('4')">4</button></td>
-                        <td><button onclick="getValue('5')">5</button></td>
-                        <td><button onclick="getValue('6')">6</button></td>
-                        <td><button class="opt" onclick="getValue('+')">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="getValue('1')">1</button></td>
-                        <td><button onclick="getValue('2')">2</button></td>
-                        <td><button onclick="getValue('3')">3</button></td>
-                        <td class="span" rowspan="2"><button class="opt" type="submit"
-                                onclick="totalValue(), audio.play()">=</button></td>
-
-                    </tr>
-                    <tr>
-                        <td><button class="opt" onclick="totalValue(getValue('/100'))">%</button></td>
-                        <td><button onclick="getValue('0')">0</button></td>
-                        <td><button onclick="getValue('.')">.</button></td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-    </form>
-
+                                </tr>
+                                <tr>
+                                    <td><button class="opt" onclick="totalValue(getValue('/100'))">%</button></td>
+                                    <td><button onclick="getValue('0')">0</button></td>
+                                    <td><button onclick="getValue('.')">.</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </form>
+    </div>
 </body>
 <script src="./js/app.js"></script>
+<!-- Animation JS cdn -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

@@ -11,14 +11,18 @@
 }
 
 /* Background Image */
-body {
+.main {
     background-image: url(../images/light-blue-wallpaper.jpg); /* Background image link: https://www.teahub.io/viewwp/iTxbw_light-blue-high-quality-wallpaper/ */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
     overflow: hidden;
+}
 
+.animation {
+    overflow: hidden;
 }
 
 /* Calculator */
