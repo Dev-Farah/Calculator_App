@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "digital-7";
+    src: url(../fonts/digital-7.ttf); /* Font link: http://www.styleseven.com/php/get_product.php?product=Digital-7 */
+    font-weight: normal;
+}
+
+/* Background Image */
+body {
+    background-image: url(../images/light-blue-wallpaper.jpg); /* Background image link: https://www.teahub.io/viewwp/iTxbw_light-blue-high-quality-wallpaper/ */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+/* Calculator */
+form .sec2 {
+    background-color: #ffffff;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+form input {
+    font-size: 45px;
+    color: #5e6170;
+    border-radius: 6px;
+    border-style: none;
+    font-family: "digital-7";
+    background: linear-gradient(to top, #d8f1f5, #eef7f7);
+    box-shadow: inset rgba(97, 97, 97, 0.12) 0px 1px 3px, inset rgba(76, 76, 76, 0.24) 0px 1px 2px;
+}
+
+form input:focus {
+    outline: 0 none;
+}
+
+table td {
+    text-align: center;
+}
+
+table button {
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 26px;
+    color: #5e6170;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to top, #d8f1f5, #eef7f7);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 0.3s linear;
+}
+
+table button:hover {
+    transform: scale(1.1);
+}
+
+.span button {
+    border-style: none;
+    height: 130px;
+    border-radius: 30px;
+}
+
+.span {
+    border-radius: 40px;
+}
+
+button.opt {
+    background: linear-gradient(to top, #56cbdb, #42dff4);
+    color: #ffffff;
+}
