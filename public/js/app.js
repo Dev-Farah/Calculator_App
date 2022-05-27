@@ -20,7 +20,7 @@ function backspace() {
 
 // Button Sound Effect
 const audio = new Audio();
-audio.src = "./images/pop.mp3";
+audio.src = "./sounds/pop.mp3";
 
 
 // Bubbles Animation
